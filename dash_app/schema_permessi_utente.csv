@@ -1,0 +1,5 @@
+,Read,Create,Update,Delete
+SuperAdmin,V,X,X,X
+Admin,V,V,X,X
+Manager,V,V,V,X
+User,V,V,V,V
