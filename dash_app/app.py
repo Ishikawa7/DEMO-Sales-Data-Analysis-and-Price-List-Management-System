@@ -31,16 +31,6 @@ app.layout = dbc.Container(
         # add a footer
         html.Hr(),
         # use a jumbotron to add a description for the app
-        html.Div(
-            dbc.Container(
-                [
-                    html.H3("Informazioni utili"),
-                ],
-                fluid=True,
-                className="py-3",
-            ),
-            className="p-3 bg-light rounded-3",
-        )
     ],
     fluid=True,
 )

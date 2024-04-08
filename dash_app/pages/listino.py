@@ -117,9 +117,10 @@ def create_layout_listino():
 layout = create_layout_listino
 
 @callback(
-    Output("collapse", "is_open"),
+    Output("collapse", "is_open", allow_duplicate=True),
     [Input("collapse-button", "n_clicks")],
     [State("collapse", "is_open")],
+    prevent_initial_call=True,
 )
 def toggle_collapse(n, is_open):
     if n:
@@ -128,12 +129,13 @@ def toggle_collapse(n, is_open):
 
 @callback(
     [
-        Output("clustering", "children"),
-        Output("discostamento_categorie", "children"),
-        Output("discostamenti_negativi", "children"),
-        Output("analytics_preventivo", "children"),
+        Output("clustering", "children", allow_duplicate=True),
+        Output("discostamento_categorie", "children", allow_duplicate=True),
+        Output("discostamenti_negativi", "children", allow_duplicate=True),
+        Output("analytics_preventivo", "children", allow_duplicate=True),
     ],
     [Input("button", "n_clicks")],
+    prevent_initial_call=True,
 )
 def update_visuals(n):
     df_pca =  pd.read_csv("listino/pca.csv")
