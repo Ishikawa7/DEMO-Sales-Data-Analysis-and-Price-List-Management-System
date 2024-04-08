@@ -4,7 +4,7 @@ import dash
 from dash import Dash, Input, Output, State, callback, html, dash_table, dcc
 import dash_bootstrap_components as dbc
 
-df_permessi = pd.read_csv('schema_permessi_utente.csv')
+df_permessi = pd.read_csv('permessi/schema_permessi_utente.csv')
 
 dash.register_page(
     __name__,

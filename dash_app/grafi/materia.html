@@ -963,70 +963,6 @@ var tomSelect=function(e,t){return new TomSelect(e,t)}
     <body>
         <div class="card" style="width: 100%">
             
-                <div id="select-menu" class="card-header">
-                    <div class="row no-gutters">
-                        <div class="col-10 pb-2">
-                            <select
-                            class="form-select"
-                            aria-label="Default select example"
-                            onchange="selectNode([value]);"
-                            id="select-node"
-                            placeholder="Select node..."
-                            >
-                                <option selected>Select a Node by ID</option>
-                                
-                                    <option value="p_l0_0(149)">p_l0_0(149)</option>
-                                
-                                    <option value="p_l0_1(242)">p_l0_1(242)</option>
-                                
-                                    <option value="p_l0_2(323)">p_l0_2(323)</option>
-                                
-                                    <option value="p_l0_4(327)">p_l0_4(327)</option>
-                                
-                                    <option value="p_l0_5(143)">p_l0_5(143)</option>
-                                
-                                    <option value="p_l0_7(264)">p_l0_7(264)</option>
-                                
-                                    <option value="p_l0_8(252)">p_l0_8(252)</option>
-                                
-                                    <option value="p_l0_9(212)">p_l0_9(212)</option>
-                                
-                                    <option value="p_l0_11(197)">p_l0_11(197)</option>
-                                
-                                    <option value="p_l0_13(275)">p_l0_13(275)</option>
-                                
-                                    <option value="p_l1_0(12)">p_l1_0(12)</option>
-                                
-                                    <option value="p_l1_1(25)">p_l1_1(25)</option>
-                                
-                                    <option value="p_l1_2(29)">p_l1_2(29)</option>
-                                
-                                    <option value="p_l1_3(28)">p_l1_3(28)</option>
-                                
-                                    <option value="p_l1_4(21)">p_l1_4(21)</option>
-                                
-                                    <option value="p_l1_6(13)">p_l1_6(13)</option>
-                                
-                                    <option value="p_l1_7(23)">p_l1_7(23)</option>
-                                
-                                    <option value="p_l1_8(24)">p_l1_8(24)</option>
-                                
-                                    <option value="p_l1_9(8)">p_l1_9(8)</option>
-                                
-                                    <option value="p_l2_0(4)">p_l2_0(4)</option>
-                                
-                                    <option value="p_l2_1(4)">p_l2_1(4)</option>
-                                
-                                    <option value="p_l2_2(1)">p_l2_2(1)</option>
-                                
-                            </select>
-                        </div>
-                        <div class="col-2 pb-2">
-                            <button type="button" class="btn btn-primary btn-block" onclick="neighbourhoodHighlight({nodes: []});">Reset Selection</button>
-                        </div>
-                    </div>
-                </div>
-            
             
               <div id="filter-menu" class="card-header">
                 <div class="row no-gutters">
@@ -1096,14 +1032,6 @@ var tomSelect=function(e,t){return new TomSelect(e,t)}
                   value : []
               };
 
-              
-                  new TomSelect("#select-node",{
-                      create: false,
-                      sortField: {
-                          field: "text",
-                          direction: "asc"
-                      }
-                  });
               
 
               
@@ -1241,8 +1169,8 @@ var tomSelect=function(e,t){return new TomSelect(e,t)}
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#db2525", "id": "p_l0_0(149)", "label": "p_l0_0(149)", "shape": "dot", "title": ["p_l0_0(149)", {"label": "p_l0_0(149)", "quantity": 149, "status": "insufficient", "type": "product_l0"}], "value": 149}, {"color": "#aad2ff", "id": "p_l0_1(242)", "label": "p_l0_1(242)", "shape": "dot", "title": ["p_l0_1(242)", {"label": "p_l0_1(242)", "quantity": 242, "status": "sufficient", "type": "product_l0"}], "value": 242}, {"color": "#aad2ff", "id": "p_l0_2(323)", "label": "p_l0_2(323)", "shape": "dot", "title": ["p_l0_2(323)", {"label": "p_l0_2(323)", "quantity": 323, "status": "sufficient", "type": "product_l0"}], "value": 323}, {"color": "#aad2ff", "id": "p_l0_4(327)", "label": "p_l0_4(327)", "shape": "dot", "title": ["p_l0_4(327)", {"label": "p_l0_4(327)", "quantity": 327, "status": "sufficient", "type": "product_l0"}], "value": 327}, {"color": "#aad2ff", "id": "p_l0_5(143)", "label": "p_l0_5(143)", "shape": "dot", "title": ["p_l0_5(143)", {"label": "p_l0_5(143)", "quantity": 143, "status": "sufficient", "type": "product_l0"}], "value": 143}, {"color": "#aad2ff", "id": "p_l0_7(264)", "label": "p_l0_7(264)", "shape": "dot", "title": ["p_l0_7(264)", {"label": "p_l0_7(264)", "quantity": 264, "status": "sufficient", "type": "product_l0"}], "value": 264}, {"color": "#aad2ff", "id": "p_l0_8(252)", "label": "p_l0_8(252)", "shape": "dot", "title": ["p_l0_8(252)", {"label": "p_l0_8(252)", "quantity": 252, "status": "sufficient", "type": "product_l0"}], "value": 252}, {"color": "#aad2ff", "id": "p_l0_9(212)", "label": "p_l0_9(212)", "shape": "dot", "title": ["p_l0_9(212)", {"label": "p_l0_9(212)", "quantity": 212, "status": "sufficient", "type": "product_l0"}], "value": 212}, {"color": "#aad2ff", "id": "p_l0_11(197)", "label": "p_l0_11(197)", "shape": "dot", "title": ["p_l0_11(197)", {"label": "p_l0_11(197)", "quantity": 197, "status": "sufficient", "type": "product_l0"}], "value": 197}, {"color": "#aad2ff", "id": "p_l0_13(275)", "label": "p_l0_13(275)", "shape": "dot", "title": ["p_l0_13(275)", {"label": "p_l0_13(275)", "quantity": 275, "status": "sufficient", "type": "product_l0"}], "value": 275}, {"color": "#56a5ff", "id": "p_l1_0(12)", "label": "p_l1_0(12)", "shape": "dot", "title": ["p_l1_0(12)", {"label": "p_l1_0(12)", "quantity": 12, "status": "sufficient", "type": "product_l1"}], "value": 12}, {"color": "#56a5ff", "id": "p_l1_1(25)", "label": "p_l1_1(25)", "shape": "dot", "title": ["p_l1_1(25)", {"label": "p_l1_1(25)", "quantity": 25, "status": "sufficient", "type": "product_l1"}], "value": 25}, {"color": "#56a5ff", "id": "p_l1_2(29)", "label": "p_l1_2(29)", "shape": "dot", "title": ["p_l1_2(29)", {"label": "p_l1_2(29)", "quantity": 29, "status": "sufficient", "type": "product_l1"}], "value": 29}, {"color": "#6b6b6b", "id": "p_l1_3(28)", "label": "p_l1_3(28)", "shape": "dot", "title": ["p_l1_3(28)", {"label": "p_l1_3(28)", "quantity": 28, "status": "blocked", "type": "product_l1"}], "value": 28}, {"color": "#56a5ff", "id": "p_l1_4(21)", "label": "p_l1_4(21)", "shape": "dot", "title": ["p_l1_4(21)", {"label": "p_l1_4(21)", "quantity": 21, "status": "sufficient", "type": "product_l1"}], "value": 21}, {"color": "#56a5ff", "id": "p_l1_6(13)", "label": "p_l1_6(13)", "shape": "dot", "title": ["p_l1_6(13)", {"label": "p_l1_6(13)", "quantity": 13, "status": "sufficient", "type": "product_l1"}], "value": 13}, {"color": "#56a5ff", "id": "p_l1_7(23)", "label": "p_l1_7(23)", "shape": "dot", "title": ["p_l1_7(23)", {"label": "p_l1_7(23)", "quantity": 23, "status": "sufficient", "type": "product_l1"}], "value": 23}, {"color": "#56a5ff", "id": "p_l1_8(24)", "label": "p_l1_8(24)", "shape": "dot", "title": ["p_l1_8(24)", {"label": "p_l1_8(24)", "quantity": 24, "status": "sufficient", "type": "product_l1"}], "value": 24}, {"color": "#56a5ff", "id": "p_l1_9(8)", "label": "p_l1_9(8)", "shape": "dot", "title": ["p_l1_9(8)", {"label": "p_l1_9(8)", "quantity": 8, "status": "sufficient", "type": "product_l1"}], "value": 8}, {"color": "#6b6b6b", "id": "p_l2_0(4)", "label": "p_l2_0(4)", "shape": "dot", "title": ["p_l2_0(4)", {"label": "p_l2_0(4)", "quantity": 4, "status": "blocked", "type": "product_l2"}], "value": 4}, {"color": "#0579ff", "id": "p_l2_1(4)", "label": "p_l2_1(4)", "shape": "dot", "title": ["p_l2_1(4)", {"label": "p_l2_1(4)", "quantity": 4, "status": "sufficient", "type": "product_l2"}], "value": 4}, {"color": "#0579ff", "id": "p_l2_2(1)", "label": "p_l2_2(1)", "shape": "dot", "title": ["p_l2_2(1)", {"label": "p_l2_2(1)", "quantity": 1, "status": "sufficient", "type": "product_l2"}], "value": 1}]);
-                  edges = new vis.DataSet([{"arrows": "to", "color": "#db2525", "from": "p_l0_0(149)", "label": "8.0", "title": "8", "to": "p_l1_3(28)", "value": 8, "weight": 8}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_1(242)", "label": "10.0", "title": "10", "to": "p_l1_9(8)", "value": 10, "weight": 10}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_2(323)", "label": "5.0", "title": "5", "to": "p_l1_2(29)", "value": 5, "weight": 5}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_2(323)", "label": "10.0", "title": "10", "to": "p_l1_1(25)", "value": 10, "weight": 10}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_4(327)", "label": "6.0", "title": "6", "to": "p_l1_6(13)", "value": 6, "weight": 6}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_4(327)", "label": "8.0", "title": "8", "to": "p_l1_9(8)", "value": 8, "weight": 8}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_4(327)", "label": "9.0", "title": "9", "to": "p_l1_8(24)", "value": 9, "weight": 9}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_5(143)", "label": "6.0", "title": "6", "to": "p_l1_4(21)", "value": 6, "weight": 6}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_5(143)", "label": "5.0", "title": "5", "to": "p_l1_9(8)", "value": 5, "weight": 5}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_7(264)", "label": "3.0", "title": "3", "to": "p_l1_7(23)", "value": 3, "weight": 3}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_7(264)", "label": "6.0", "title": "6", "to": "p_l1_3(28)", "value": 6, "weight": 6}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_8(252)", "label": "3.0", "title": "3", "to": "p_l1_7(23)", "value": 3, "weight": 3}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_9(212)", "label": "2.0", "title": "2", "to": "p_l1_1(25)", "value": 2, "weight": 2}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_9(212)", "label": "9.0", "title": "9", "to": "p_l1_6(13)", "value": 9, "weight": 9}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_9(212)", "label": "10.0", "title": "10", "to": "p_l1_9(8)", "value": 10, "weight": 10}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_11(197)", "label": "2.0", "title": "2", "to": "p_l1_6(13)", "value": 2, "weight": 2}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_11(197)", "label": "2.0", "title": "2", "to": "p_l1_3(28)", "value": 2, "weight": 2}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_11(197)", "label": "3.0", "title": "3", "to": "p_l1_9(8)", "value": 3, "weight": 3}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_11(197)", "label": "5.0", "title": "5", "to": "p_l1_8(24)", "value": 5, "weight": 5}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_11(197)", "label": "8.0", "title": "8", "to": "p_l1_7(23)", "value": 8, "weight": 8}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_11(197)", "label": "7.0", "title": "7", "to": "p_l1_0(12)", "value": 7, "weight": 7}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_13(275)", "label": "4.0", "title": "4", "to": "p_l1_1(25)", "value": 4, "weight": 4}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_13(275)", "label": "8.0", "title": "8", "to": "p_l1_2(29)", "value": 8, "weight": 8}, {"arrows": "to", "color": "#aad2ff", "from": "p_l0_13(275)", "label": "6.0", "title": "6", "to": "p_l1_0(12)", "value": 6, "weight": 6}, {"arrows": "to", "color": "#56a5ff", "from": "p_l1_0(12)", "label": "1.0", "title": "1", "to": "p_l2_1(4)", "value": 1, "weight": 1}, {"arrows": "to", "color": "#56a5ff", "from": "p_l1_1(25)", "label": "4.0", "title": "4", "to": "p_l2_1(4)", "value": 4, "weight": 4}, {"arrows": "to", "color": "#56a5ff", "from": "p_l1_2(29)", "label": "1.0", "title": "1", "to": "p_l2_0(4)", "value": 1, "weight": 1}, {"arrows": "to", "color": "#56a5ff", "from": "p_l1_2(29)", "label": "1.0", "title": "1", "to": "p_l2_1(4)", "value": 1, "weight": 1}, {"arrows": "to", "color": "#db2525", "from": "p_l1_3(28)", "label": "1.0", "title": "1", "to": "p_l2_0(4)", "value": 1, "weight": 1}, {"arrows": "to", "color": "#56a5ff", "from": "p_l1_6(13)", "label": "2.0", "title": "2", "to": "p_l2_1(4)", "value": 2, "weight": 2}, {"arrows": "to", "color": "#56a5ff", "from": "p_l1_7(23)", "label": "4.0", "title": "4", "to": "p_l2_1(4)", "value": 4, "weight": 4}, {"arrows": "to", "color": "#56a5ff", "from": "p_l1_8(24)", "label": "3.0", "title": "3", "to": "p_l2_1(4)", "value": 3, "weight": 3}, {"arrows": "to", "color": "#56a5ff", "from": "p_l1_9(8)", "label": "3.0", "title": "3", "to": "p_l2_2(1)", "value": 3, "weight": 3}]);
+                  nodes = new vis.DataSet([{"color": "#e0e098", "id": "fornitore_1964", "label": "fornitore_1964", "shape": "dot", "title": ["fornitore_1964", {"type": "fornitore"}]}, {"color": "#76cc76", "id": "mangini_3", "label": "mangini_3", "shape": "dot", "title": ["mangini_3", {"type": "azienda"}]}, {"color": "#76cc76", "id": "mangini_1", "label": "mangini_1", "shape": "dot", "title": ["mangini_1", {"type": "azienda"}]}, {"color": "#e0e098", "id": "fornitore_1571", "label": "fornitore_1571", "shape": "dot", "title": ["fornitore_1571", {"type": "fornitore"}]}, {"color": "#76cc76", "id": "mangini_2", "label": "mangini_2", "shape": "dot", "title": ["mangini_2", {"type": "azienda"}]}, {"color": "#e0e098", "id": "fornitore_597", "label": "fornitore_597", "shape": "dot", "title": ["fornitore_597", {"type": "fornitore"}]}, {"color": "#e0e098", "id": "fornitore_5624", "label": "fornitore_5624", "shape": "dot", "title": ["fornitore_5624", {"type": "fornitore"}]}, {"color": "#e0e098", "id": "fornitore_3493", "label": "fornitore_3493", "shape": "dot", "title": ["fornitore_3493", {"type": "fornitore"}]}, {"color": "#e0e098", "id": "fornitore_584", "label": "fornitore_584", "shape": "dot", "title": ["fornitore_584", {"type": "fornitore"}]}, {"color": "#9d6ec9", "id": "cliente_1", "label": "cliente_1", "shape": "dot", "title": ["cliente_1", {"type": "cliente"}]}, {"color": "#9d6ec9", "id": "cliente_6", "label": "cliente_6", "shape": "dot", "title": ["cliente_6", {"type": "cliente"}]}, {"color": "#76cc76", "id": "mangini_0", "label": "mangini_0", "shape": "dot", "title": ["mangini_0", {"type": "azienda"}]}, {"color": "#9d6ec9", "id": "cliente_4", "label": "cliente_4", "shape": "dot", "title": ["cliente_4", {"type": "cliente"}]}, {"color": "#9d6ec9", "id": "cliente_7", "label": "cliente_7", "shape": "dot", "title": ["cliente_7", {"type": "cliente"}]}, {"color": "#9d6ec9", "id": "cliente_0", "label": "cliente_0", "shape": "dot", "title": ["cliente_0", {"type": "cliente"}]}, {"color": "#9d6ec9", "id": "cliente_3", "label": "cliente_3", "shape": "dot", "title": ["cliente_3", {"type": "cliente"}]}, {"color": "#9d6ec9", "id": "cliente_2", "label": "cliente_2", "shape": "dot", "title": ["cliente_2", {"type": "cliente"}]}, {"color": "#9d6ec9", "id": "cliente_9", "label": "cliente_9", "shape": "dot", "title": ["cliente_9", {"type": "cliente"}]}, {"color": "#9d6ec9", "id": "cliente_8", "label": "cliente_8", "shape": "dot", "title": ["cliente_8", {"type": "cliente"}]}, {"color": "#9d6ec9", "id": "cliente_5", "label": "cliente_5", "shape": "dot", "title": ["cliente_5", {"type": "cliente"}]}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "black", "from": "mangini_1", "label": "017.PM152", "title": "1", "to": "cliente_1", "value": 1, "weight": 1}, {"arrows": "to", "color": "black", "from": "mangini_1", "label": "017.PM152", "title": "1", "to": "cliente_0", "value": 1, "weight": 1}, {"arrows": "to", "color": "black", "from": "mangini_1", "label": "017.PM001", "title": "1", "to": "cliente_6", "value": 1, "weight": 1}, {"arrows": "to", "color": "black", "from": "mangini_1", "label": "017.PM152", "title": "1", "to": "cliente_7", "value": 1, "weight": 1}, {"arrows": "to", "color": "black", "from": "mangini_1", "label": "017.PM152", "title": "1", "to": "cliente_8", "value": 1, "weight": 1}, {"arrows": "to", "color": "black", "from": "mangini_1", "label": "017.PM152", "title": "1", "to": "cliente_4", "value": 1, "weight": 1}, {"arrows": "to", "color": "black", "from": "mangini_1", "label": "017.PM152", "title": "1", "to": "cliente_2", "value": 1, "weight": 1}, {"arrows": "to", "color": "black", "from": "mangini_0", "label": "017.PM152", "title": "1", "to": "cliente_6", "value": 1, "weight": 1}, {"arrows": "to", "color": "black", "from": "mangini_0", "label": "090.VST33", "title": "1", "to": "cliente_4", "value": 1, "weight": 1}, {"arrows": "to", "color": "black", "from": "mangini_0", "label": "017.PM152", "title": "1", "to": "cliente_2", "value": 1, "weight": 1}, {"arrows": "to", "color": "black", "from": "mangini_0", "label": "017.PM152", "title": "1", "to": "cliente_8", "value": 1, "weight": 1}, {"arrows": "to", "color": "black", "from": "mangini_0", "label": "017.PM152", "title": "1", "to": "cliente_5", "value": 1, "weight": 1}, {"arrows": "to", "color": "black", "from": "mangini_0", "label": "017.PM152", "title": "1", "to": "cliente_3", "value": 1, "weight": 1}, {"arrows": "to", "color": "black", "from": "mangini_0", "label": "017.PM152", "title": "1", "to": "cliente_1", "value": 1, "weight": 1}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });
@@ -1310,8 +1238,6 @@ var tomSelect=function(e,t){return new TomSelect(e,t)}
                     network.on("click", neighbourhoodHighlight);
                   
 
-                  
-                    network.on("selectNode", neighbourhoodHighlight);
                   
 
                   
