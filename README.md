@@ -150,12 +150,6 @@ seaborn==0.13.2
 - **Discrepancy Detection**: Identification of pricing anomalies
 - **Moving Averages**: Trend smoothing and prediction
 
-![Sales Data Analysis Dashboard Screenshot 1](./output_images/analytics_listino1.png)
----
-![Sales Data Analysis Dashboard Screenshot 2](./output_images/analytics_listino2.png)
----
-![Sales Data Analysis Dashboard Screenshot 5](./output_images/dimensional_reduction.png)
-
 ### 2. DDT Transaction Analysis (`vista_ddt.ipynb`)
 
 - **Sales Volume Analysis**: Transaction frequency and volume tracking
@@ -199,6 +193,12 @@ seaborn==0.13.2
    - Price list visualization and editing
    - Clustering analysis display
    - Price deviation tracking
+  
+![Sales Data Analysis Dashboard Screenshot 1](./output_images/analytics_listino1.png)
+---
+![Sales Data Analysis Dashboard Screenshot 2](./output_images/analytics_listino2.png)
+---
+![Sales Data Analysis Dashboard Screenshot 5](./output_images/dimensional_reduction.png)
 
 2. **DDT Analysis** (`ddt.py`)
    - Transaction monitoring
