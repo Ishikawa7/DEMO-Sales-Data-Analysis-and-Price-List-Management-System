@@ -153,6 +153,7 @@ seaborn==0.13.2
 ![Sales Data Analysis Dashboard Screenshot 1](./output_images/analytics_listino1.png)
 ---
 ![Sales Data Analysis Dashboard Screenshot 2](./output_images/analytics_listino2.png)
+---
 ![Sales Data Analysis Dashboard Screenshot 5](./output_images/dimensional_reduction.png)
 
 ### 2. DDT Transaction Analysis (`vista_ddt.ipynb`)
@@ -172,6 +173,7 @@ seaborn==0.13.2
 - **Flow Optimization**: Identifying bottlenecks and opportunities
 
 ![Sales Data Analysis Dashboard Screenshot 3](./output_images/dashboard_products_network_analysis.png)
+---
 ![Sankey 1](./output_images/money_flow.png)
 
 ### 4. Code Matching Analysis (`vista_ddt_CODICI.ipynb`)
