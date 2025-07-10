@@ -157,18 +157,12 @@ seaborn==0.13.2
 - **Product Performance**: Best/worst selling products
 - **Time Series Analysis**: Seasonal patterns and trends
 
-![Sales Data Analysis Dashboard Screenshot 4](./output_images/dashboard_listino_analytics.png)
-
 ### 3. Network Flow Analysis (`graph-flow_analysis.ipynb`)
 
 - **Product Relationship Mapping**: Understanding product interdependencies
 - **Sankey Diagrams**: Visual flow representation of sales processes
 - **Network Metrics**: Centrality measures and clustering coefficients
 - **Flow Optimization**: Identifying bottlenecks and opportunities
-
-![Sales Data Analysis Dashboard Screenshot 3](./output_images/dashboard_products_network_analysis.png)
----
-![Sankey 1](./output_images/money_flow.png)
 
 ### 4. Code Matching Analysis (`vista_ddt_CODICI.ipynb`)
 
@@ -204,18 +198,22 @@ seaborn==0.13.2
    - Transaction monitoring
    - Supplier performance metrics
    - Volume analysis
-
-3. **Graph Visualizations** (`grafi.py`)
-   - Network diagrams
-   - Flow charts
-   - Relationship mappings
-
-4. **Analytics Dashboard** (`analisi_listino.py`)
    - Comprehensive price analysis
    - Statistical summaries
    - Trend predictions
 
-5. **User Management** (`permessi.py`)
+![Sales Data Analysis Dashboard Screenshot 4](./output_images/dashboard_listino_analytics.png)
+
+1. **Graph Visualizations** (`grafi.py`)
+   - Network diagrams
+   - Flow charts
+   - Relationship mappings
+   - 
+![Sales Data Analysis Dashboard Screenshot 3](./output_images/dashboard_products_network_analysis.png)
+---
+![Sankey 1](./output_images/money_flow.png)
+
+1. **User Management** (`permessi.py`)
    - Role-based access control
    - Permission management
 
