@@ -1,4 +1,4 @@
-# Sales Data Analysis and Price List Management System
+# Sales Data Analysis and Price List Management System (DEMO)
 
 ## 📋 Project Overview
 
@@ -151,8 +151,11 @@ seaborn==0.13.2
 - **Moving Averages**: Trend smoothing and prediction
 
 ![Sales Data Analysis Dashboard Screenshot 1](./output_images/analytics_listino1.png)
+<br>
 ![Sales Data Analysis Dashboard Screenshot 2](./output_images/analytics_listino2.png)
+<br>
 ![Sales Data Analysis Dashboard Screenshot 5](./output_images/dimensional_reduction.png)
+<br>
 
 ### 2. DDT Transaction Analysis (`vista_ddt.ipynb`)
 
@@ -171,6 +174,7 @@ seaborn==0.13.2
 - **Flow Optimization**: Identifying bottlenecks and opportunities
 
 ![Sales Data Analysis Dashboard Screenshot 3](./output_images/dashboard_products_network_analysis.png)
+<br>
 ![Sankey 1](./output_images/money_flow.png)
 
 ### 4. Code Matching Analysis (`vista_ddt_CODICI.ipynb`)
